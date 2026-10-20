@@ -1,0 +1,163 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "世界": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "日期": {
+          "default": "2026/06/05",
+          "type": "string"
+        },
+        "时间段": {
+          "default": "下午",
+          "type": "string",
+          "enum": [
+            "清晨",
+            "上午",
+            "中午",
+            "下午",
+            "傍晚",
+            "夜晚",
+            "深夜"
+          ]
+        },
+        "当前地点": {
+          "default": "南户综合学校 三楼走廊",
+          "type": "string"
+        },
+        "天气": {
+          "default": "梅雨刚停，闷",
+          "type": "string"
+        },
+        "剧情阶段": {
+          "default": "共通",
+          "type": "string",
+          "enum": [
+            "共通",
+            "分线",
+            "结局"
+          ]
+        },
+        "主线": {
+          "default": "未定",
+          "type": "string",
+          "enum": [
+            "未定",
+            "杏铃",
+            "杏璃",
+            "燕",
+            "泉",
+            "无"
+          ]
+        },
+        "婚期倒数": {
+          "default": 100,
+          "type": "number"
+        },
+        "婚事进度": {
+          "default": "传开",
+          "type": "string",
+          "enum": [
+            "传开",
+            "定档",
+            "逼近",
+            "本周"
+          ]
+        },
+        "季节待办": {
+          "default": [
+            "学生会竞选（六月下）",
+            "慈善演出（七月中）",
+            "暑假旅行（八月）"
+          ],
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "最近发生": {
+          "default": "放学后的走廊，紫苑发信息说今晚有事要谈",
+          "type": "string"
+        }
+      }
+    },
+    "鹰仓杏铃": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "好感度": {
+          "default": 45,
+          "type": "number"
+        },
+        "关系阶段": {
+          "default": "继妹",
+          "type": "string",
+          "enum": [
+            "继妹",
+            "在乎",
+            "恋人"
+          ]
+        }
+      }
+    },
+    "鹰仓杏璃": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "好感度": {
+          "default": 40,
+          "type": "number"
+        },
+        "关系阶段": {
+          "default": "继妹",
+          "type": "string",
+          "enum": [
+            "继妹",
+            "在乎",
+            "恋人"
+          ]
+        }
+      }
+    },
+    "龙胆燕": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "好感度": {
+          "default": 35,
+          "type": "number"
+        },
+        "关系阶段": {
+          "default": "青梅",
+          "type": "string",
+          "enum": [
+            "青梅",
+            "在乎",
+            "恋人"
+          ]
+        }
+      }
+    },
+    "结桥泉": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "好感度": {
+          "default": 30,
+          "type": "number"
+        },
+        "关系阶段": {
+          "default": "对手",
+          "type": "string",
+          "enum": [
+            "对手",
+            "在乎",
+            "恋人"
+          ]
+        }
+      }
+    }
+  }
+}
